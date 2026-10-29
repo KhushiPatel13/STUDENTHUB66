@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Hub</h1>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="resource.html">Resources</a>
+    <a href="profile.html">Profile</a>
+    <a href="result.html">Results</a>
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="faq.html">FQA</a>
+    <a href="login.html" class="btn">Login</a>
+
+        <!-- Dark/Light Mode -->
+        <span id="themeToggle" class="theme-btn">🌙</span>
+    </nav>
+
+    <div class="notification" id="notificationBar">
+        <span>
+            📢 Semester 5 Results Declared |
+            🎉 Tech Fest Registration Open |
+            📚 New Study Materials Uploaded
+        </span>
+
+        <button id="closeBtn">&times;</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Student Hub</h2>
+    <p>Your all-in-one student portal</p>
+</section>
+
+<div class="container">
+    <h2>Quick Access</h2>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Events</h3>
+            <p>Check upcoming campus events.</p>
+            <a href="events.html" class="btn">View</a>
+        </div>
+
+        <div class="card">
+            <h3>Resources</h3>
+            <p>Access study materials.</p>
+            <a href="resource.html" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>Results</h3>
+            <p>View your academic results.</p>
+            <a href="result.html" class="btn">Check</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Student Hub</p>
+</footer>
+<script>
+// Close notification
+document.getElementById("closeBtn").addEventListener("click", function () {
+    document.getElementById("notificationBar").style.display = "none";
+});
+
+// Hamburger menu
+document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("navbar").classList.toggle("show");
+});
+
+// Light / Dark Mode
+const themeBtn = document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeBtn.textContent = "☀️";
+    }else{
+        themeBtn.textContent = "🌙";
+    }
+
+});
+</script>
+</body>
+</html>

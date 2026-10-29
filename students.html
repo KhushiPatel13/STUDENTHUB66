@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Students - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Hub</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="faq.html">FAQ</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>Student Profiles</h2>
+
+    <p>
+        Search and explore student profiles
+    </p>
+
+</section>
+
+
+<div class="container">
+
+    <input
+        type="text"
+        id="studentSearch"
+        placeholder="Search students..."
+    >
+
+
+    <select id="branchFilter">
+
+        <option value="all">
+            All Branches
+        </option>
+
+        <option value="Computer Science">
+            Computer Science
+        </option>
+
+        <option value="Information Technology">
+            Information Technology
+        </option>
+
+        <option value="Civil Engineering">
+            Civil Engineering
+        </option>
+
+        <option value="Electronics">
+            Electronics
+        </option>
+
+        <option value="Mechanical Engineering">
+            Mechanical Engineering
+        </option>
+
+    </select>
+
+
+    <select id="studentSort">
+
+        <option value="default">
+            Sort By
+        </option>
+
+        <option value="name">
+            Name
+        </option>
+
+        <option value="rollNo">
+            Roll Number
+        </option>
+
+    </select>
+
+
+    <div
+        id="studentList"
+        class="card-grid"
+    >
+
+        <p>Loading student profiles...</p>
+
+    </div>
+
+
+    <div class="pagination">
+
+        <button id="studentPrev">
+            Previous
+        </button>
+
+        <span id="studentPage">
+            Page 1
+        </span>
+
+        <button id="studentNext">
+            Next
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Student Hub</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FAQ - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Hub</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="faq.html">FAQ</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p>
+        Find answers to common questions
+    </p>
+
+</section>
+
+
+<div class="container">
+
+    <input
+        type="text"
+        id="faqSearch"
+        placeholder="Search FAQs..."
+    >
+
+
+    <select id="faqFilter">
+
+        <option value="all">
+            All Categories
+        </option>
+
+        <option value="Events">
+            Events
+        </option>
+
+        <option value="Academic">
+            Academic
+        </option>
+
+        <option value="Resources">
+            Resources
+        </option>
+
+        <option value="Profile">
+            Profile
+        </option>
+
+        <option value="Contact">
+            Contact
+        </option>
+
+        <option value="General">
+            General
+        </option>
+
+        <option value="Account">
+            Account
+        </option>
+
+        <option value="Feedback">
+            Feedback
+        </option>
+
+        <option value="Students">
+            Students
+        </option>
+
+        <option value="Notices">
+            Notices
+        </option>
+
+    </select>
+
+
+    <select id="faqSort">
+
+        <option value="default">
+            Sort By
+        </option>
+
+        <option value="question">
+            Question
+        </option>
+
+    </select>
+
+
+    <div id="faqList">
+
+        <p>Loading FAQs...</p>
+
+    </div>
+
+
+    <div class="pagination">
+
+        <button id="faqPrev">
+            Previous
+        </button>
+
+        <span id="faqPage">
+            Page 1
+        </span>
+
+        <button id="faqNext">
+            Next
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Student Hub</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

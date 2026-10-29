@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="result-container">
+
+        <!-- Close Button -->
+        <button id="closeBtn" style="float:right;">&times;</button>
+
+        <h2>Student Result</h2>
+
+        <div class="student-info">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Enrollment No:</strong> 202500123</p>
+            <p><strong>Course:</strong> CSE</p>
+            <p><strong>Semester:</strong> 3</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>88</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>Database Management</td>
+                    <td>84</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>Java Programming</td>
+                    <td>91</td>
+                    <td>A+</td>
+                </tr>
+
+                <tr>
+                    <td>Operating System</td>
+                    <td>80</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>Computer Networks</td>
+                    <td>86</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <p><strong>Total:</strong> 429 / 500</p>
+            <p><strong>Percentage:</strong> 85.8%</p>
+            <p><strong>CGPA:</strong> 8.9</p>
+            <p class="pass">Result: PASS</p>
+        </div>
+
+        <button>Download Result</button>
+
+    </div>
+
+    <script>
+        // Close button
+        document.getElementById("closeBtn").onclick = function () {
+            document.querySelector(".result-container").style.display = "none";
+        };
+
+        // Close when clicking anywhere outside the result container
+        document.addEventListener("click", function (e) {
+            const result = document.querySelector(".result-container");
+
+            if (!result.contains(e.target)) {
+                result.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

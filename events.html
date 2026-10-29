@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Events - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Hub</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="students.html">Students</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="resource.html">Resources</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>College Events</h2>
+
+    <p>
+        Explore activities happening on campus
+    </p>
+
+</section>
+
+
+<div class="container">
+
+    <h2>Upcoming Events</h2>
+
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search events..."
+    >
+
+
+    <select id="filter">
+
+        <option value="all">
+            All Categories
+        </option>
+
+        <option value="Technical">
+            Technical
+        </option>
+
+        <option value="Sports">
+            Sports
+        </option>
+
+        <option value="Cultural">
+            Cultural
+        </option>
+
+        <option value="Academic">
+            Academic
+        </option>
+
+    </select>
+
+
+    <select id="sort">
+
+        <option value="default">
+            Sort By
+        </option>
+
+        <option value="title">
+            Title
+        </option>
+
+        <option value="date">
+            Date
+        </option>
+
+    </select>
+
+
+    <div
+        id="eventList"
+        class="card-grid"
+    >
+        <p>Loading events...</p>
+    </div>
+
+
+    <div class="pagination">
+
+        <button id="prev">
+            Previous
+        </button>
+
+        <span id="pageNumber">
+            Page 1
+        </span>
+
+        <button id="next">
+            Next
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Student Hub</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
